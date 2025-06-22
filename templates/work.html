@@ -1,0 +1,52 @@
+<!-- templates/work.html -->
+{% extends 'base.html' %}
+{% block title %}My Work | Savitha{% endblock %}
+{% block content %}
+<h1>My Work</h1>
+<div class="work-section">
+  <div class="dropdown">
+    <button class="dropdown-btn" onclick="toggleDropdown('projects')">Projects</button>
+    <div class="dropdown-content" id="projects">
+      <a href="#">Python</a>
+      <a href="#">Data Science</a>
+      <a href="#">Data Engineering</a>
+    </div>
+  </div>
+  <div class="dropdown">
+    <button class="dropdown-btn" onclick="toggleDropdown('courses')">Courses</button>
+    <div class="dropdown-content" id="courses">
+      <a href="/python-with-graphics">Python with Graphics</a>
+    </div>
+  </div>
+  <div class="dropdown">
+    <button class="dropdown-btn" onclick="toggleDropdown('hobbies')">Hobbies</button>
+    <div class="dropdown-content" id="hobbies">
+      <a href="#">Driving</a>
+      <a href="#">Swimming</a>
+      <a href="#">Yoga</a>
+      <a href="#">Gym</a>
+      <a href="#">Photography</a>
+      <a href="#">Art works</a>
+      <a href="#">Organising</a>
+      <a href="#">Cooking</a>
+    </div>
+  </div>
+  <div class="dropdown">
+    <button class="dropdown-btn" onclick="toggleDropdown('family')">Family</button>
+    <div class="dropdown-content" id="family">
+      <a href="#">Kids routine</a>
+      <a href="#">Kids menu</a>
+    </div>
+  </div>
+</div>
+<script>
+function toggleDropdown(id) {
+  const content = document.getElementById(id);
+  const isVisible = content.classList.contains('show');
+  document.querySelectorAll('.dropdown-content').forEach(dc => dc.classList.remove('show'));
+  if (!isVisible) {
+    content.classList.add('show');
+  }
+}
+</script>
+{% endblock %}

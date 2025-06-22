@@ -1,0 +1,5 @@
+type: web
+name: savitha-portfolio
+runtime: python
+buildCommand: "pip install -r requirements.txt"
+startCommand: "python app.py"

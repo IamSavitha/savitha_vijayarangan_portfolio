@@ -1,0 +1,152 @@
+/* static/style.css */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #eedeaf;
+  color: #333;
+  line-height: 1.6;
+}
+
+.navbar {
+  background-color: #2c3e50;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 30px;
+}
+
+.nav-brand {
+  font-weight: bold;
+  font-size: 22px;
+  letter-spacing: 1px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+  color: #f1c40f;
+}
+
+main {
+  padding: 40px 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #2c3e50;
+  color: white;
+  margin-top: 50px;
+}
+
+section {
+  background-color: white;
+  padding: 35px;
+  margin: 25px 0;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+h1 {
+  color: #198edc;
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+h2 {
+  color: #198edc;
+  font-size: 26px;
+  margin-bottom: 10px;
+}
+
+h3 {
+  color: #2980b9;
+  font-size: 22px;
+  margin-top: 25px;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+ul li {
+  margin-bottom: 8px;
+}
+
+.work-section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.dropdown-btn {
+  width: 100%;
+  padding: 14px;
+  font-size: 16px;
+  background-color: #919474;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.dropdown-btn:hover {
+  background-color: #2980b9;
+}
+
+.dropdown-content {
+  display: none;
+  margin-top: 5px;
+  background-color: #eef6fb;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.dropdown-content a {
+  display: block;
+  padding: 12px 18px;
+  text-decoration: none;
+  color: #2c3e50;
+  border-top: 1px solid #ddd;
+  transition: background-color 0.2s;
+}
+
+.dropdown-content a:first-child {
+  border-top: none;
+}
+
+.dropdown-content a:hover {
+  background-color: #dceefa;
+}
+
+.show {
+  display: block;
+}
+
+a {
+  color: #3498db;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
